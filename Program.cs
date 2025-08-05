@@ -9,6 +9,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
         var builder = WebApplication.CreateBuilder(args);
 
         // 1️⃣ Controller servislerini ekliyoruz (API uç noktaları için)
