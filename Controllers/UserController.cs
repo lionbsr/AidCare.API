@@ -34,9 +34,17 @@ namespace AidCare.API.Controllers
         [HttpPost]
         public IActionResult Add(User user)
         {
-            _userService.Add(user);
-            return Ok();
+            try
+            {
+                _userService.Add(user);
+                return Ok("Kullanıcı başarıyla eklendi.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message }); // özel mesaj dön
+            }
         }
+
 
         [HttpPut]
         public IActionResult Update(User user)

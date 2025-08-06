@@ -1,9 +1,11 @@
-﻿using AidCare.Business.Abstract; // IUserService arayüzü
-using AidCare.Business.Concrete; // UserManager sınıfı
+﻿using AidCare.Business.Abstract; // IUserService, IBloodGlucoseService
+using AidCare.Business.Concrete; // UserManager, BloodGlucoseManager
 using AidCare.DataAccess;
+using AidCare.DataAccess.Abstract;
+using AidCare.DataAccess.Concrete.EntityFramework;
 using AidCare.DataAccess.Repositories;
-using Microsoft.EntityFrameworkCore; // DbContext ve Npgsql için
-using Microsoft.OpenApi.Models; // Swagger için
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 internal class Program
 {
@@ -13,10 +15,8 @@ internal class Program
 
         var builder = WebApplication.CreateBuilder(args);
 
-        // 1️⃣ Controller servislerini ekliyoruz (API uç noktaları için)
         builder.Services.AddControllers();
 
-        // 2️⃣ Swagger/OpenAPI yapılandırması ekleniyor
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen(c =>
         {
@@ -27,15 +27,16 @@ internal class Program
             });
         });
 
-        // 3️⃣ Veritabanı bağlantısını ayarlıyoruz (PostgreSQL)
         builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-        // 4️⃣ Bağımlılıkları (servisleri) projeye enjekte ediyoruz
+        // 🔹 Dependency Injection
         builder.Services.AddScoped<IUserService, UserManager>();
         builder.Services.AddScoped<IUserRepository, EfUserRepository>();
 
-        // 5️⃣ CORS Politikası ekleniyor (Swagger üzerinden gelen istekler için önemli)
+        builder.Services.AddScoped<IBloodGlucoseService, BloodGlucoseManager>();
+        builder.Services.AddScoped<IBloodGlucoseRepository, EfBloodGlucoseRepository>();
+
         builder.Services.AddCors(options =>
         {
             options.AddPolicy("AllowAll", policy =>
@@ -48,10 +49,8 @@ internal class Program
 
         var app = builder.Build();
 
-        // 6️⃣ CORS aktif ediliyor
         app.UseCors("AllowAll");
 
-        // 7️⃣ Geliştirme ortamı için Swagger UI aktif ediliyor
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
@@ -61,16 +60,9 @@ internal class Program
             });
         }
 
-        // 8️⃣ HTTPS yönlendirmesi aktif
         app.UseHttpsRedirection();
-
-        // 9️⃣ Yetkilendirme middleware'i aktif (JWT vs. için)
         app.UseAuthorization();
-
-        // 🔟 Controller route'larını API'ye bağlama
         app.MapControllers();
-
-        // 🔚 Uygulamayı çalıştırma
         app.Run();
     }
 }
