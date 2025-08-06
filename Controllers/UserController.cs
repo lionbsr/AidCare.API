@@ -44,7 +44,7 @@ namespace AidCare.API.Controllers
                 return BadRequest(new { message = ex.Message }); // özel mesaj dön
             }
         }
-
+        
 
         [HttpPut]
         public IActionResult Update(User user)
