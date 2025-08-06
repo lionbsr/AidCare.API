@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\AidCare.Business\bin\Debug\net8.0\AidCare.Business.deps.json
+C:\Users\User\source\repos\AidCare.Business\bin\Debug\net8.0\AidCare.Business.dll
+C:\Users\User\source\repos\AidCare.Business\bin\Debug\net8.0\AidCare.Business.pdb
+C:\Users\User\source\repos\AidCare.Business\bin\Debug\net8.0\AidCare.DataAccess.dll
+C:\Users\User\source\repos\AidCare.Business\bin\Debug\net8.0\AidCare.Entities.dll
+C:\Users\User\source\repos\AidCare.Business\bin\Debug\net8.0\AidCare.Entities.pdb
+C:\Users\User\source\repos\AidCare.Business\bin\Debug\net8.0\AidCare.DataAccess.pdb
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\AidCare.Business.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\AidCare.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\AidCare.Business.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\AidCare.Business.AssemblyInfo.cs
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\AidCare.Business.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\AidCare..083145BA.Up2Date
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\AidCare.Business.dll
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\refint\AidCare.Business.dll
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\AidCare.Business.pdb
+C:\Users\User\source\repos\AidCare.Business\obj\Debug\net8.0\ref\AidCare.Business.dll

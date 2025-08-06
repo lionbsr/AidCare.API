@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\AidCare.Entities\bin\Debug\net8.0\AidCare.Entities.deps.json
+C:\Users\User\source\repos\AidCare.Entities\bin\Debug\net8.0\AidCare.Entities.dll
+C:\Users\User\source\repos\AidCare.Entities\bin\Debug\net8.0\AidCare.Entities.pdb
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\AidCare.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\AidCare.Entities.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\AidCare.Entities.AssemblyInfo.cs
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\AidCare.Entities.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\AidCare.Entities.dll
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\refint\AidCare.Entities.dll
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\AidCare.Entities.pdb
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\ref\AidCare.Entities.dll
+C:\Users\User\source\repos\AidCare.Entities\bin\Debug\net8.0\AidCare.Entities.runtimeconfig.json
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\AidCare.Entities.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\AidCare.Entities\obj\Debug\net8.0\AidCare.Entities.genruntimeconfig.cache
