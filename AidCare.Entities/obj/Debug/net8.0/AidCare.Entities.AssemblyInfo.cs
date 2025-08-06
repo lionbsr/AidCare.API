@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AidCare.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc230bd6d53766b9ba40ab97c2cba315d693cefe")]
 [assembly: System.Reflection.AssemblyProductAttribute("AidCare.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AidCare.Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
